@@ -1,4 +1,4 @@
-const categoryLinks = document.querySelectorAll('nav a');
+const categoryLinks = document.querySelectorAll('nav button');
 const selectedCategory = document.getElementById('selected-category');
 
 categoryLinks.forEach(function(link) {
