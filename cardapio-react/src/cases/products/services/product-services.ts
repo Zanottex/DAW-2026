@@ -27,7 +27,8 @@ export const ProductServices = {
         throw new Error("A API do Mockaroo retornou um id ou preço inválido.");
       }
 
-      return { ...product, id, price };
+      const image = product.image.replace(/(^|\/)burguer(?=[.-])/i, "$1burger");
+      return { ...product, id, price, image };
     });
   },
 };
