@@ -2,6 +2,13 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Mockaroo products API
+
+The app loads products from the Mockaroo `GET /products.json` endpoint. Set
+`VITE_MOCKAROO_API_KEY` in `.env.local` (see `.env.example`) and restart the
+development server after changing it. The endpoint should return a JSON array
+with `id`, `name`, `description`, `price`, `category`, and `image` fields.
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
